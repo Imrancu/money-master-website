@@ -20,32 +20,37 @@
         <section>
             <div class="container">
                 <div class="row text-center">
-                    <div class="col-7 bg-light rounded py-5 border border-top-0 border-bottom-0 border-start-0 border-5 border-primary">
+                    <div class="col-lg-7 col-sm-12 bg-light rounded py-5">
                         <img class="img-fluid" src="./images/banner.png" alt="" />
                     </div>
-                    <div class="col-5 bg-light rounded py-5">
+                    <div class="col-lg-5 col-sm-12 bg-light rounded py-5">
                         <h4 class="">Income</h4>
                         <span class="me-3 mt-3">Income:</span
-              ><input id="total-income" class="mt-3" type="number" />
+              ><input id="total-income" class="mt-3" type="text" />
               <h4 class="mt-3">Expenses</h4>
               <span class="me-3 mt-5">Food:</span
-              ><input id="food-cost" class="mt-3" type="number" /> <br />
+              ><input id="food-cost" class="mt-3" type="text" /> <br />
               <span class="me-3 mt-5">Rent:</span
-              ><input id="rental-cost" class="mt-3" type="number" /> <br />
+              ><input id="rental-cost" class="mt-3" type="text" /> <br />
               <span class="me-3 mt-5">Clothes:</span
-              ><input id="other-cost" class="mt-3" type="number" /> <br />
+              ><input id="other-cost" class="mt-3" type="text" /> <br />
               <button id="calculation-btn" class="btn btn-primary mt-3">
                 Calculate
               </button>
-              <h4 class="mt-3">Total Expenses: <span id="expenses"></span></h4>
-                        <h4 class="mt-3">Balance: <span id="balance"></span></h4>
-                        <span class="me-3">Save:</span
-              ><input id="saving-input" type="number" />
-              <span>%</span>
+              <h4 class="mt-3">
+                Total Expenses: <span id="expenses">000</span>
+                        </h4>
+                        <h4 class="mt-3">Balance: <span id="balance">000</span></h4>
+                        <span class="me-3">Save:</span><input id="saving-input" />
+                        <span>%</span>
                         <button id="saving-btn" class="btn btn-primary">Save</button
               ><br />
-              <h4 id="saving-balance" class="mt-3">Saving Amount:</h4>
-              <h4 id="remaining-banance" class="mt-3">Remaining Balance:</h4>
+              <h4 class="mt-3">
+                Saving Amount: <span id="saving-balance">000</span>
+              </h4>
+              <h4 class="mt-3">
+                Remaining Balance: <span id="remaining-banance">000</span>
+              </h4>
             </div>
           </div>
         </div>
