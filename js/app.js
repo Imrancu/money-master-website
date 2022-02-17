@@ -3,25 +3,25 @@ const calculationButton = document.getElementById('calculation-btn');
 calculationButton.addEventListener('click', function() {
 
         const totalIncome = document.getElementById('total-income').value;
-        if (isNaN(totalIncome) == true) {
+        if (isNaN(totalIncome) == true) { // Error handling case
             alert('Please, input a number!')
         } else if (totalIncome < 0) {
             alert('Please, input a number greater than 0!')
         }
         const foodCost = document.getElementById('food-cost').value;
-        if (isNaN(foodCost) == true) {
+        if (isNaN(foodCost) == true) { // Error handling case
             alert('Please, input a number!')
         } else if (foodCost < 0) {
             alert('Please, input a number greater than 0!')
         }
         const rentalCost = document.getElementById('rental-cost').value;
-        if (isNaN(rentalCost) == true) {
+        if (isNaN(rentalCost) == true) { // Error handling case
             alert('Please, input a number!')
         } else if (rentalCost < 0) {
             alert('Please, input a number greater than 0!')
         }
         const otherCost = document.getElementById('other-cost').value;
-        if (isNaN(otherCost) == true) {
+        if (isNaN(otherCost) == true) { // Error handling case
             alert('Please, input a number!')
         } else if (otherCost < 0) {
             alert('Please, input a number greater than 0!')
@@ -44,7 +44,7 @@ savingBtn.addEventListener('click', function() {
     if (isNaN(savingInput) == true) {
         alert('Please, write a number!')
     }
-    if (savingInput >= 100) {
+    if (savingInput >= 100) { // Error handling case
         alert('Write a number within 1 - 100')
     }
     const countPercentage = balanceText * savingInput / 100;
